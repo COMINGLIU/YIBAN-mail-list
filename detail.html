@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>detail</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/detail.css">
+</head>
+<body>
+    <div class="header">
+        <a class="back" href="index.html">返回</a>
+        <p>查看教师信息</p>
+    </div>
+    <div class="brief-intro">
+        <div class="intro-wrap">
+            <img src="images/portrait.png" alt="">
+            <p><span id="poSition">职称</span><span id="teachersName">姓名</span></p>
+        </div>
+    </div>
+    <div class="detail-info">
+        <div class="prompt">已复制到粘贴板</div>
+        <p><span>办公室</span><span id="offAdd">物电A220</span></p>
+        <p><span>QQ</span><span id="qqNumber">123456</span></p>
+        <!-- <p><span>手机号码</span><span id="telNumber">1234567890</span></p> -->
+        <p><span>办公室号码</span><span id="offNumber">012345</span></p>
+    </div>
+    <div class="handle">
+        <input type="button" value="呼叫办公室号码" name="" id="call" class="handle-btn">
+        <input type="button" value="复制" name="" id="copy" class="handle-btn">
+        <a href="index.html" title="" id="return" class="handle-btn">返回</a>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

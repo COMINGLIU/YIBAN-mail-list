@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>通讯录</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        通讯录
+    </div>
+    <div class="search-container">
+        <input type="text" id="search" class="search" placeholder="请输入教师姓名或所属单位" name="">
+
+    </div>
+    <div id="nothing" style="width: 100%;">
+
+    </div>
+    <ul id="suggest">
+    </ul>
+    <div id="list-container">
+        <ul id="college" class="college">
+            <li class="computer-all">
+                <span class="xy"><img src="images/badge/computer.jpg" alt=""><p class="xy-name">信息科学与工程学院</p><p class="query-res"></p></span>
+                <ul class="computer hide">
+                </ul>
+            </li>
+            <li class="math-all">
+                <span class="xy"><img src="images/badge/math.jpg" alt=""><p class="xy-name">数学与计量经济学院</p><p class="query-res"></p></span>
+                <ul class="math hide">
+                </ul>
+            </li>
+            <li class="electrical-all">
+                <span class="xy"><img  src="images/badge/electrical.jpg" alt=""><p class="xy-name">电器与信息工程学院</p><p class="query-res"></p></span>
+                <ul class="electrical hide">
+                </ul>
+            </li>
+            <li class="law-all">
+                <span class="xy"><img src="images/badge/law.jpg" alt=""><p class="xy-name">法学院</p><p class="query-res"></p></span>
+                <ul class="law hide">
+                </ul>
+            </li>
+            <li class="materialElectirc-all">
+                <span class="xy"><img src="images/badge/materialElectirc.jpg"  alt=""><p class="xy-name">物理与微电子科学学院</p><p class="query-res"></p></span>
+                <ul class="materialElectirc hide">
+                </ul>
+            </li>
+            <li class="art-all">
+                <span class="xy"><img src="images/badge/art.jpg" alt=""><p class="xy-name">中国语言文学学院</p><p class="query-res"></p></span>
+                <ul class="art hide">
+                </ul>
+            </li>
+            <li class="business-all">
+                <span class="xy"><img src="images/badge/business.jpg" alt=""><p class="xy-name">工商管理学院</p><p class="query-res"></p></span>
+                <ul class="business hide">
+                </ul>
+            </li>
+            <li class="manager-all">
+                <span class="xy"><img src="images/badge/manager.png" alt=""><p class="xy-name">经济与管理研究中心</p><p class="query-res"></p></span>
+                <ul class="manager hide">
+                </ul>
+            </li>
+            <li class="hicivilde-all">
+                <span class="xy"><img src="images/badge/hicivilde.jpg" alt=""><p class="xy-name">土木工程学院</p><p class="query-res"></p></span>
+                <ul class="hicivilde hide">
+                </ul>
+            </li>
+            <li class="foreign">
+                <span class="xy"><img src="images/badge/foreign.png" alt=""><p class="xy-name">外国语与国际教育学院</p><p class="query-res"></p></span>
+                <ul class="foreign hide">
+                </ul>
+            </li>
+            <li class="newsMovie-all">
+                <span class="xy"><img src="images/badge/newsMovie.png" alt=""><p class="xy-name">新闻传播与影视艺术学院</p><p class="query-res"></p></span>
+                <ul class="newsMovie hide">
+                </ul>
+            </li>
+            <li class="ylsy-all">
+                <span class="xy"><img src="images/badge/ylsy.jpg" alt=""><p class="xy-name">岳麓书院</p><p class="query-res"></p></span>
+                <ul class="ylsy hide">
+                </ul>
+            </li>
+            <li class="mechanics-all">
+                <span class="xy"><img src="images/badge/mechanics.png" alt=""><p class="xy-name">机械与运载工程学院</p><p class="query-res"></p></span>
+                <ul class="mechanics hide">
+                </ul>
+            </li>
+            <li class="material-all">
+                <span class="xy"><img src="images/badge/material.png" alt=""><p class="xy-name">材料科学与工程学院</p><p class="query-res"></p></span>
+                <ul class="material hide">
+                </ul>
+            </li>
+            <li class="buidding-all">
+                <span class="xy"><img src="images/badge/buidding.jpg" alt=""><p class="xy-name">建筑学院</p><p class="query-res"></p></span>
+                <ul class="buidding hide">
+                </ul>
+            </li>
+            <li class="chemistry-all">
+                <span class="xy"><img src="images/badge/chemistry.png" alt=""><p class="xy-name">化学化工学院</p><p class="query-res"></p></span>
+                <ul class="chemistry hide">
+                </ul>
+            </li>
+            <li class="environnment-all">
+                <span class="xy"><img src="images/badge/environnment.png" alt=""><p class="xy-name">环境科学与工程学院</p><p class="query-res"></p></span>
+                <ul class="environnment hide">
+                </ul>
+            </li>
+            <li class="biology-all">
+                <span class="xy"><img src="images/badge/biology.png" alt=""><p class="xy-name">生物学院</p><p class="query-res"></p></span>
+                <ul class="biology hide">
+                </ul>
+            </li>
+            <li class="design-all">
+                <span class="xy"><img src="images/badge/design.png" alt=""><p class="xy-name">设计艺术学院</p><p class="query-res"></p></span>
+                <ul class="design hide">
+                </ul>
+            </li>
+            <li class="robot-all">
+                <span class="xy"><img src="images/badge/robot.jpg" alt=""><p class="xy-name">机器人学院</p><p class="query-res"></p></span>
+                <ul class="robot hide">
+                </ul>
+            </li>
+            <li class="marxist-all">
+                <span class="xy"><img src="images/badge/marxist.png" alt=""><p class="xy-name">马克思主义学院</p><p class="query-res"></p></span>
+                <ul class="marxist hide">
+                </ul>
+            </li>
+            <li class="economic-trade-all">
+                <span class="xy"><img src="images/badge/economic-trade.png" alt=""><p class="xy-name">经济与贸易学院</p><p class="query-res"></p></span>
+                <ul class="economic-trade hide">
+                </ul>
+            </li>
+            <li class="jintong-all">
+                <span class="xy"><img src="images/badge/jintong.png" alt=""><p class="xy-name">金融与统计学院</p><p class="query-res"></p></span>
+                <ul class="jintong hide">
+                </ul>
+            </li>
+            <li class="edcucation-all">
+                <span class="xy"><img src="images/badge/edcucation.png" alt=""><p class="xy-name">教育与科学研究院</p><p class="query-res"></p></span>
+                <ul class="edcucation hide">
+                </ul>
+            </li>
+            <li class="economics-all">
+                <span class="xy"><img src="images/badge/sport.png" alt=""><p class="xy-name">体育学院</p><p class="query-res"></p></span>
+                <ul class="economics hide">
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+.header {
+    width:100%;
+    height:48px;
+    background: url('../images/header.png');
+    text-align: center;
+    line-height: 50px;
+    color:#fff;
+    font-size: 20px;
+    font-family: '黑体';
+	background-position: center;
+	position: fixed;
+	z-index: 3;
+}
+.search-container {
+    width:100%;
+    height:60px;
+	padding-top: 50px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position: fixed;
+}
+.college{
+	padding-top: 110px;
+}
+.search {
+    width:80%;
+    height:40px;
+    border:none;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-image: url('../images/search.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.xy,.college li ul li{
+    width:100%;
+    height:39px;
+    line-height:39px;
+    display: inline-block;
+    text-indent: 30px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.xy {
+    background-image:url('../images/fold.png');
+    background-position:10px center;
+    background-repeat: no-repeat;
+}
+.xy img{
+    vertical-align: middle;
+    width:35px;
+    height:35px;
+    margin-top:-5px;
+}
+
+.xy p {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+#suggest {
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    position:fixed;
+    top:110px;
+    transition-duration: .3s;
+}
+#suggest li {
+    width:90%;
+    height:39px;
+    padding-left:10%;
+    list-style: none;
+    border-bottom:1px solid #ccc;
+    line-height:29px;
+    background-color:#fff;
+    cursor: pointer;
+    animation: sug-in .2s;
+}
+#suggest li span {
+    margin-left: 30px;
+    font-size: 14px;
+    color: rgb(51,102,153);
+}
+@keyframes sug-in {
+    from {height:0;opacity: 0;}
+    to {height:29px;opacity:1;}
+}
+#suggest li a {
+    text-decoration: none;
+    width:90%;
+    height:100%;
+    display: inline-block;
+}
+.sug-name {
+    color:#15b5e9;
+}
+.sug-xy {
+    color:#15b5e9;
+    font-size:12px;
+}
+.query-res {
+    color:#fff;
+    font-size:12px;
+    float: right;
+}
